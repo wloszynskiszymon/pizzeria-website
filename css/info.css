@@ -1,0 +1,105 @@
+.info {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.info img {
+    width: 100%;
+}
+
+.info__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 60%;
+    transition: .5s;
+    background-color: rgba(255,255,255,0.7);
+}
+
+
+.info__box:hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+    transition: .5s;
+    width: 80%;
+    height: 60%;
+    background-color: rgba(255,255,255,.9);
+}
+
+.info__box table {
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+.info__box tr {
+    width: 50%;
+    height: 100%;
+}
+
+.info__box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.info__box article {
+    width: 100%;
+    height: 80%;
+}
+
+.info__box h1 {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 2.7rem;
+    margin-top: 10%;
+    transition: 1s;
+}
+
+.info__box h1:hover {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 2.7rem;
+    margin-top: 10%;
+    text-decoration: underline;
+    transition: 1s;
+}
+
+.info__box h2 {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.info__box h2:hover {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.info__box__article article {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10%;
+    transition: .5s;
+}
+
+.info__box__article article:hover {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10%;
+    transition: .5s;
+}
