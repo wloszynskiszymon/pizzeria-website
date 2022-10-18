@@ -1,0 +1,154 @@
+.card {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: minmax(20rem, 1fr) max-content 3rem;
+
+  &__top {
+    grid-template-rows: 1 / 2;
+    background: linear-gradient(
+        rgba($color-second, 0.4),
+        rgba($color-third, 0.4)
+      ),
+      url(../img/images/kropodilla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+  }
+
+  &__h1 {
+    @extend %heading;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(1rem, 2.5rem) rotate(-2deg);
+    padding: 0.2rem 1rem;
+    font-size: 4rem;
+
+    &::before {
+      transform: skew(-15deg);
+    }
+  }
+
+  &__h3 {
+    @extend %heading;
+    font-size: 2rem;
+    margin: 0 auto;
+    width: min-content;
+    padding: 0.1rem 1rem;
+  }
+
+  &__main {
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 3rem 0;
+
+    &__item {
+      list-style: none;
+      width: 50%;
+      text-decoration: none;
+      font-size: 2rem;
+      color: white;
+      text-shadow: $text-shadow-1;
+      text-align: center;
+      margin-top: 1rem;
+
+      padding-bottom: 0.5rem;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-first;
+      }
+    }
+  }
+
+  &__bottom {
+    grid-row: 3 / 4;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  &__discount {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(161, 7, 7);
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    text-align: center;
+    z-index: 20;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 6rem;
+      width: 6rem;
+      background: rgb(161, 7, 7);
+      z-index: 20;
+    }
+
+    &::before {
+      transform: rotate(30deg);
+    }
+    &::after {
+      transform: rotate(60deg);
+    }
+
+    &__value {
+      position: absolute;
+      z-index: 25;
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+    }
+  }
+
+  &__price {
+    color: white;
+    text-shadow: $text-shadow-1;
+
+    text-align: center;
+    text-transform: lowercase;
+    white-space: nowrap;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    padding: 0 3rem;
+    z-index: 15;
+    margin-bottom: 3rem;
+
+    &__container {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__heading {
+      @extend %heading;
+    }
+  }
+}

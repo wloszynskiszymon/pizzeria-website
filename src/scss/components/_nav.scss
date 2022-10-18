@@ -1,0 +1,65 @@
+.nav {
+  height: $nav-height;
+  position: fixed;
+
+  background: linear-gradient($color-third, $color-second);
+
+  width: 100%;
+  display: flex;
+
+  z-index: 1000000;
+
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0.5rem 2rem;
+
+  &__left {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__middle {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__link {
+      display: block;
+      width: 15rem;
+      height: 12rem;
+      border-radius: 0 0 50% 50%;
+      background: linear-gradient($color-third, $color-forth);
+      box-shadow: rgba(0, 0, 0, 0.1) 1rem 1rem 5rem,
+        rgba(0, 0, 0, 0.1) -1rem 1rem 5rem;
+
+      transform: translateY(2rem);
+    }
+
+    &__logo {
+      display: block;
+      width: 15rem;
+      margin: 0 auto;
+      padding: 3rem;
+      transform: translateY(-2rem);
+    }
+  }
+
+  &__right {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__link {
+    font-size: 2rem;
+    color: white;
+    text-shadow: black 0.1rem 0.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.5s;
+  }
+}

@@ -1,36 +1,157 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzeria</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Pizza Fest</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;500;700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="src/scss/main.scss">
 </head>
 
-<body>
-    <header>
-        <nav class="nav">
-            <div class="nav__logo">
-                <a href="#start"><img src="logo.svg" /></a>
+<body class="container">
+
+    <nav class="nav">
+        <div class="nav__left">
+            <div class="nav__item nav__about">
+                <a href="#about" class="nav__link">O nas</a>
             </div>
 
-            <div class="nav__div">
-                <div class="item">
-                    <a href="#about" class="nav__div--link">O nas</a>
+            <div class="nav__item nav__menu">
+                <a href="#menu" class="nav__link">Menu</a>
+            </div>
+
+            <div class="nav__item nav__gallery">
+                <a href="#range" class="nav__link">Dowóz</a>
+            </div>
+
+        </div>
+
+        <div class="nav__middle">
+            <a class="nav__middle__link" href="#start">
+                <img class="nav__middle__logo" src="logo.svg" />
+            </a>
+        </div>
+
+        <div class="nav__right">
+            <div class="nav__item nav__gallery">
+                <a href="#gallery" class="nav__link">Galeria</a>
+            </div>
+            <div class="nav__item nav__ratings">
+                <a href="#ratings" class="nav__link">Opinie</a>
+            </div>
+            <div class="nav__item nav__contact">
+                <a href="#contact" class="nav__link">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="header__left">
+            <h1 class="heading-1">Pizza</h1>
+            <h2 class="heading-2">Fest</h2>
+            <h3 class="heading-3">Dobra jest!</h3>
+
+            <a class="link-1" href="#menu">Sprawdź naszą ofertę!</a>
+        </div>
+
+
+
+        <div class="header__right"></div>
+
+    </header>
+
+    <section class="about">
+        <div class="about__section">
+            <div class="about__container">
+                <div class="about__container__left">
+
                 </div>
-                <div class="item">
-                    <a href="#menu" class="nav__div--link">Oferta</a>
-                </div>
-                <div class="item">
-                    <a href="#gallery" class="nav__div--link">Galeria</a>
-                </div>
-                <div class="item">
-                    <a href="#contact" class="nav__div--link">Kontakt</a>
+
+                <div class="about__container__right">
+                    <h1 class="about__heading">O NAS</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque a saepe recusandae ab deserunt.
+                        Animi ipsam repudiandae quas ex ipsum, dolore cupiditate non laudantium aliquam. Optio
+                        distinctio nulla nisi cum.
+                        Libero ipsum sunt hic placeat aspernatur distinctio, commodi autem repellendus tempora cum iure
+                        enim cumque nisi ad consectetur dolore delectus nulla explicabo deleniti quos illum voluptatum.
+                        Suscipit debitis non quisquam.
+                        Deleniti dicta provident dolores perspiciatis. Odit dolores laborum obcaecati neque!
+                        Consequuntur quod harum ea rerum fugit. Laborum accusantium quaerat fugiat voluptatum porro qui
+                        saepe ad omnis? Exercitationem consectetur necessitatibus rem?
+                        Soluta sequi commodi accusamus debitis dicta nihil temporibus, explicabo quisquam suscipit ipsam
+                        inventore mollitia molestias eligendi id voluptatem ex unde. Eos sunt tempore dolores vel
+                        nostrum ullam ab, totam rerum.
+                        Rem harum impedit eos quasi expedita obcaecati ab recusandae velit totam nisi vitae,
+                        reprehenderit veniam ipsum aperiam ducimus dolorum distinctio nemo adipisci at quae quo.
+                    </p>
                 </div>
             </div>
-        </nav>
-    </header>
+
+        </div>
+
+        <div class="discount">
+            <h1 class="discount__heading">Dzisiejsza promocja:</h1>
+
+            <div class="discount__container">
+
+                <div class="card">
+                    <div class="card__top">
+                        <h3 class="card__h3">Pizza</h3>
+                        <h1 class="card__h1">Kropodilla</h1>
+
+                        <div class="card__discount">
+                            <p class="card__discount__value">-28%</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card__main">
+                        <ul class="card__list">
+                            <li class="card__list__item">ser</li>
+                            <li class="card__list__item">boczek</li>
+                            <li class="card__list__item">suszony pomidor</li>
+                            <li class="card__list__item">papryczka chilli</li>
+                            <li class="card__list__item">pieczarki</li>
+                        </ul>
+                    </div>
+
+                    <div class="card__bottom">
+
+                        <div class="card__price__container">
+                            <h2 class="card__price__heading card__price">22,99 zł</h2>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="menu">
+        menu
+    </section>
+
+    <section class="gallery">
+        Gallery
+    </section>
+    <section class="map">
+
+
+    </section>
+
+    <footer class="footer">
+    </footer>
+    <!-- <header>
+        
 
     <main>
         <section>
@@ -42,44 +163,7 @@
             </div>
         </section>
 
-        <section>
-            <div class="info">
-                <img src="wooden.jpg" alt="tło">
-                <div class="info__box">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="restauracja.jpg" alt="restauracja">
-                            </td>
-                            <td>
-                                <article class="info__box__article">
-                                    <h1 id="about">O NAS</h1>
-                                    <div>
-                                        <h2>Restauracja Pizza Fest w sercu Poznania</h2>
 
-
-                                        <article>
-                                            Restauracja Pizza Fest jest usytuowana w sercu Poznania, przy jednej z
-                                            głównych ulic. Przekraczając próg Restauracji Pizza Fest zaskoczy Cię
-                                            interesujące wnętrze.
-                                        </article>
-
-                                        <article>
-                                            Oryginalny wystrój nawiązuje do architektury miasta Poznań. Mamy najlepsze
-                                            unikalne pizze w Poznaniu! Nigdzie indziej takich rodzajów pizz nie
-                                            zasmakujesz!
-                                        </article>
-
-                                    </div>
-                                </article>
-
-
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </section>
 
 
 
@@ -222,7 +306,7 @@
         </div>
 
     </footer>
-    <script src="app.js"></script>
+ -->
 </body>
 
 </html>
