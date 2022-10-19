@@ -1,8 +1,15 @@
 .card {
-  width: 100%;
-  height: 100%;
+  width: $card-width;
+  height: $card-height;
+
+  border-radius: 2rem;
+
+  overflow: hidden;
+
   display: grid;
-  grid-template-rows: minmax(20rem, 1fr) max-content 3rem;
+  grid-template-rows: 1.5fr 1fr;
+
+  box-shadow: $box-shadow-1;
 
   &__top {
     grid-template-rows: 1 / 2;
@@ -25,7 +32,7 @@
     left: 0;
     transform: translate(1rem, 2.5rem) rotate(-2deg);
     padding: 0.2rem 1rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
 
     &::before {
       transform: skew(-15deg);
@@ -38,47 +45,6 @@
     margin: 0 auto;
     width: min-content;
     padding: 0.1rem 1rem;
-  }
-
-  &__main {
-    grid-row: 2 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    padding: 3rem 0;
-
-    &__item {
-      list-style: none;
-      width: 50%;
-      text-decoration: none;
-      font-size: 2rem;
-      color: white;
-      text-shadow: $text-shadow-1;
-      text-align: center;
-      margin-top: 1rem;
-
-      padding-bottom: 0.5rem;
-
-      &:not(:last-child) {
-        border-bottom: 1px solid $color-first;
-      }
-    }
-  }
-
-  &__bottom {
-    grid-row: 3 / 4;
-    width: 100%;
-    height: 100%;
-    position: relative;
   }
 
   &__discount {
@@ -119,13 +85,31 @@
     &__value {
       position: absolute;
       z-index: 25;
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 700;
       color: white;
     }
   }
 
+  &__main {
+    grid-row: 2 / 3;
+    position: relative;
+
+    background-color: $color-fifth;
+  }
+
+  &__ingredients {
+    font-size: 2rem;
+    color: white;
+    text-shadow: $text-shadow-1;
+    text-align: center;
+    margin: 4rem 2rem 0 2rem;
+  }
+
   &__price {
+    position: absolute;
+    bottom: 0;
+    left: 5rem;
     color: white;
     text-shadow: $text-shadow-1;
 
@@ -136,7 +120,9 @@
     letter-spacing: 0.3rem;
     padding: 0 3rem;
     z-index: 15;
-    margin-bottom: 3rem;
+    width: fit-content;
+    margin-bottom: 0.5rem;
+    height: fit-content;
 
     &__container {
       width: 100%;
@@ -151,4 +137,68 @@
       @extend %heading;
     }
   }
+}
+
+#dokusso {
+  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+    url(../img/images/dokusso.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#welofaitta {
+  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+    url(../img/images/welofaitta.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#kropodilla {
+  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+    url(../img/images/kropodilla.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#hinulitta {
+  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+    url(../img/images/hinulitta.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sofiitta {
+  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+    url(../img/images/sofiitta.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#neapolitana {
+  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+    url(../img/images/neapolitana.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#vesuvio {
+  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+    url(../img/images/vesuvio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#vegana {
+  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+    url(../img/images/vegana.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

@@ -55,9 +55,9 @@
 
     <header class="header">
         <div class="header__left">
-            <h1 class="heading-1">Pizza</h1>
-            <h2 class="heading-2">Fest</h2>
-            <h3 class="heading-3">Dobra jest!</h3>
+            <h1 class="header__heading-1">Pizza</h1>
+            <h2 class="header__heading-2">Fest</h2>
+            <h3 class="header__heading-3">Dobra jest!</h3>
 
             <a class="link-1" href="#menu">Sprawdź naszą ofertę!</a>
         </div>
@@ -76,8 +76,9 @@
                 </div>
 
                 <div class="about__container__right">
-                    <h1 class="about__heading">O NAS</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque a saepe recusandae ab deserunt.
+                    <h1 class="heading-1">O NAS</h1>
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque a saepe
+                        recusandae ab deserunt.
                         Animi ipsam repudiandae quas ex ipsum, dolore cupiditate non laudantium aliquam. Optio
                         distinctio nulla nisi cum.
                         Libero ipsum sunt hic placeat aspernatur distinctio, commodi autem repellendus tempora cum iure
@@ -100,44 +101,144 @@
         <div class="discount">
             <h1 class="discount__heading">Dzisiejsza promocja:</h1>
 
-            <div class="discount__container">
+            <div class="discount__main">
+
+                <!-- Card start -->
 
                 <div class="card">
                     <div class="card__top">
                         <h3 class="card__h3">Pizza</h3>
                         <h1 class="card__h1">Kropodilla</h1>
-
                         <div class="card__discount">
                             <p class="card__discount__value">-28%</p>
                         </div>
-
                     </div>
-
                     <div class="card__main">
-                        <ul class="card__list">
-                            <li class="card__list__item">ser</li>
-                            <li class="card__list__item">boczek</li>
-                            <li class="card__list__item">suszony pomidor</li>
-                            <li class="card__list__item">papryczka chilli</li>
-                            <li class="card__list__item">pieczarki</li>
-                        </ul>
-                    </div>
-
-                    <div class="card__bottom">
-
-                        <div class="card__price__container">
-                            <h2 class="card__price__heading card__price">22,99 zł</h2>
-                        </div>
-
+                        <p class="card__ingredients">
+                            ser, boczek, suszony pomidor, papryczka chilli, pieczarki
+                        </p>
+                        <h2 class="card__price__heading card__price">22,99 zł</h2>
                     </div>
                 </div>
-
             </div>
+            <!-- Card end -->
+
+
         </div>
     </section>
 
     <section class="menu">
-        menu
+        <h1 class="heading-1">NASZE MENU</h1>
+        <div class="menu__container">
+            <!-- Card start -->
+            <div class="card">
+                <div id="dokusso" class="card__top">
+                    <h3 class="card__h3">Pizza</h3>
+                    <h1 class="card__h1">Dokusso</h1>
+                </div>
+                <div class="card__main">
+                    <p class="card__ingredients">
+                        szczypiorek, oliwki, papryka, ser, kabanos
+                    </p>
+                    <h2 class="card__price__heading card__price">39,99 zł</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="welofaitta" class="card__top">
+                    <h3 class="card__h3">Pizza</h3>
+                    <h1 class="card__h1">Welofaitta</h1>
+                </div>
+                <div class="card__main">
+                    <p class="card__ingredients">
+                        mięso z bizona, masło orzechowe, papryczka chilli, polane sosem bolognese
+                    </p>
+                    <h2 class="card__price__heading card__price">59,99 zł</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="kropodilla" class="card__top">
+                    <h3 class="card__h3">Pizza</h3>
+                    <h1 class="card__h1">Kropodilla</h1>
+                </div>
+                <div class="card__main">
+                    <p class="card__ingredients">
+                        oliwki, ser, boczek, suszony pomidor, ogórek
+                    </p>
+                    <h2 class="card__price__heading card__price">16,99zł</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="hinulitta" class="card__top">
+                    <h3 class="card__h3">Pizza</h3>
+                    <h1 class="card__h1">Hinulitta</h1>
+                </div>
+                <div class="card__main">
+                    <p class="card__ingredients">
+                        ser, boczek, suszony pomidor, papryczka chilli, pieczarki
+                    </p>
+                    <h2 class="card__price__heading card__price">23,99 zł</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="sofiitta" class="card__top">
+                    <h3 class="card__h3">Pizza</h3>
+                    <h1 class="card__h1">Sofiitta</h1>
+                </div>
+                <div class="card__main">
+                    <p class="card__ingredients">
+                        salami, papryka, grzyby, serek wiejski, buraki
+                    </p>
+                    <h2 class="card__price__heading card__price">21,99zł</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="neapolitana" class="card__top">
+                    <h3 class="card__h3">Pizza</h3>
+                    <h1 class="card__h1">Neapolitana</h1>
+                </div>
+                <div class="card__main">
+                    <p class="card__ingredients">
+                        ser neapolitano, boczek, papryczka chilli, pieczarki, baranina
+                    </p>
+                    <h2 class="card__price__heading card__price">19,99 zł</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="vesuvio" class="card__top">
+                    <h3 class="card__h3">Pizza</h3>
+                    <h1 class="card__h1">vesuvio</h1>
+                </div>
+                <div class="card__main">
+                    <p class="card__ingredients">
+                        szynka, ser, oliwki, grzyby
+                    </p>
+                    <h2 class="card__price__heading card__price">26,99 zł</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="vegana" class="card__top">
+                    <h3 class="card__h3">Pizza</h3>
+                    <h1 class="card__h1">Vegetariana</h1>
+                </div>
+                <div class="card__main">
+                    <p class="card__ingredients">
+                        trawa, sałatka, ser biały, sos czosnkowy
+                    </p>
+                    <h2 class="card__price__heading card__price">24,20 zł</h2>
+                </div>
+            </div>
+
+
+
+            <!-- Card end -->
+        </div>
     </section>
 
     <section class="gallery">

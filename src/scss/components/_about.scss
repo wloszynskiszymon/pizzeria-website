@@ -47,17 +47,7 @@
     }
   }
 
-  &__heading {
-    @extend %heading;
-    font-size: 5rem;
-    width: fit-content;
-    transform: skew(-10deg) rotate(-5deg);
-    margin: 0 auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  p {
+  &__text {
     font-size: 1.6rem;
     font-weight: 300;
     color: white;
