@@ -21,7 +21,7 @@ body {
     )
     [info-end menu-start]
     max-content
-    [menu-end gallery-start] 80vh [gallery-end map-start] 70vh [map-end footer-start] 20vh [footer-end];
+    [menu-end delivery-start] 80vh [delivery-end gallery-start] 80vh [gallery-end map-start] 70vh [map-end footer-start] 20vh [footer-end];
 
   // grid-template-columns:
   //   [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
@@ -31,12 +31,12 @@ body {
 }
 
 .gallery {
-  grid-row: [gallery-start] / [gallery-end];
+  grid-row: gallery-start / gallery-end;
   background-color: purple;
 }
 
 .map {
-  grid-row: [map-start] / [map-end];
+  grid-row: map-start / map-end;
   background-color: brown;
   position: relative;
   display: flex;

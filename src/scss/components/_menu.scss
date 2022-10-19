@@ -1,5 +1,5 @@
 .menu {
-  grid-row: [menu-start] / [menu-end];
+  grid-row: menu-start / menu-end;
   background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
     url(../img/images/header-background.jpg);
   background-size: cover;
