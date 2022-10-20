@@ -1,5 +1,6 @@
 .menu {
   grid-row: menu-start / menu-end;
+
   background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
     url(../img/images/header-background.jpg);
   background-size: cover;
@@ -7,9 +8,11 @@
   background-position: center;
   background-attachment: fixed;
 
+  overflow: hidden;
+
   &__container {
     margin: -4rem 8rem 8rem 8rem;
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 4rem 2rem;
 
     border: 1rem solid $color-second;
     background: linear-gradient(
