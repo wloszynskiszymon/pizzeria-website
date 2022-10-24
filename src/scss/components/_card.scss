@@ -14,8 +14,8 @@
   &__top {
     grid-template-rows: 1 / 2;
     background: linear-gradient(
-        rgba($color-second, 0.4),
-        rgba($color-third, 0.4)
+        rgba($color-second, 0.2),
+        rgba($color-third, 0.2)
       ),
       url(../img/images/kropodilla.jpg);
     background-size: cover;
@@ -95,7 +95,8 @@
     grid-row: 2 / 3;
     position: relative;
 
-    background-color: $color-fifth;
+    // background-color: $color-fifth;
+    background: linear-gradient($color-second, $color-fifth);
   }
 
   &__ingredients {
@@ -140,7 +141,7 @@
 }
 
 #dokusso {
-  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+  background: linear-gradient(rgba($color-second, 0.2), rgba($color-third, 0.2)),
     url(../img/images/dokusso.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -148,7 +149,7 @@
 }
 
 #welofaitta {
-  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+  background: linear-gradient(rgba($color-second, 0.2), rgba($color-third, 0.2)),
     url(../img/images/welofaitta.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -156,7 +157,7 @@
 }
 
 #kropodilla {
-  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+  background: linear-gradient(rgba($color-second, 0.2), rgba($color-third, 0.2)),
     url(../img/images/kropodilla.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -164,7 +165,7 @@
 }
 
 #hinulitta {
-  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+  background: linear-gradient(rgba($color-second, 0.2), rgba($color-third, 0.2)),
     url(../img/images/hinulitta.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -172,7 +173,7 @@
 }
 
 #sofiitta {
-  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+  background: linear-gradient(rgba($color-second, 0.2), rgba($color-third, 0.2)),
     url(../img/images/sofiitta.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -180,7 +181,7 @@
 }
 
 #neapolitana {
-  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+  background: linear-gradient(rgba($color-second, 0.2), rgba($color-third, 0.2)),
     url(../img/images/neapolitana.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -188,7 +189,7 @@
 }
 
 #vesuvio {
-  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+  background: linear-gradient(rgba($color-second, 0.2), rgba($color-third, 0.2)),
     url(../img/images/vesuvio.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -196,7 +197,7 @@
 }
 
 #vegana {
-  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+  background: linear-gradient(rgba($color-second, 0.2), rgba($color-third, 0.2)),
     url(../img/images/vegana.jpg);
   background-size: cover;
   background-repeat: no-repeat;
