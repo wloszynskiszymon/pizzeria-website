@@ -20,14 +20,27 @@
 
   &__middle {
     width: 10%;
+
+    @include respond(desktop) {
+      width: 15%;
+    }
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     &__link {
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 15rem;
       height: 12rem;
+
+      @include respond(laptop) {
+        width: 12rem;
+        height: 10rem;
+        transform: translateY(1rem);
+      }
       border-radius: 0 0 50% 50%;
       background: linear-gradient($color-third, $color-forth);
       box-shadow: rgba(0, 0, 0, 0.1) 1rem 1rem 5rem,
@@ -41,7 +54,11 @@
       width: 15rem;
       margin: 0 auto;
       padding: 3rem;
-      transform: translateY(-2rem);
+
+      @include respond(laptop) {
+        width: 14rem;
+        transform: translateY(-0.5rem);
+      }
     }
   }
 

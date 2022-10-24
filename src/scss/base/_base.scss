@@ -19,10 +19,7 @@ body {
 .container {
   display: grid;
   grid-template-rows:
-    [header-start] minmax(75rem, 100vh) [header-end info-start] minmax(
-      55rem,
-      max-content
-    )
+    [header-start] 100vh [header-end info-start] minmax(55rem, max-content)
     [info-end menu-start]
     max-content
     [menu-end delivery-start] max-content [delivery-end gallery-start] max-content [gallery-end ratings-start] max-content [ratings-end footer-start] max-content [footer-end];

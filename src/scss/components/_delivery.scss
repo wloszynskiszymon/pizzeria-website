@@ -10,8 +10,12 @@
 
   &__map {
     position: relative;
-    width: 100rem;
+    width: 55vw;
     height: 60rem;
+
+    @include respond(laptop) {
+      width: 45vw;
+    }
 
     border: 1rem solid $color-second;
 
@@ -27,8 +31,12 @@
   }
 
   &__container {
-    width: 60rem;
+    width: 35vw;
     height: 60rem;
+
+    @include respond(laptop) {
+      width: 45vw;
+    }
 
     background: linear-gradient($color-second, $color-fifth);
 

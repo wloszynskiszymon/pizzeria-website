@@ -22,27 +22,47 @@
     @extend %heading;
 
     margin-top: calc($nav-height + 12.5rem);
-    font-size: 18rem;
+
+    font-size: calc(8rem + 7vw);
+
     letter-spacing: 1rem;
 
     transform: skew(-14deg) rotate(-4deg);
+
+    @include respond(laptop) {
+      font-size: calc(8rem + 4vw);
+
+      margin-top: calc($nav-height + 7.5rem);
+    }
   }
 
   &__heading-2 {
     @extend %heading;
 
-    font-size: 15rem;
+    font-size: calc(6rem + 5vw);
 
     transform: skew(-14deg) translate(15rem, -5rem) rotate(-4deg);
+
+    @include respond(laptop) {
+      font-size: calc(6rem + 3vw);
+      transform: skew(-14deg) translate(12rem, -3rem) rotate(-4deg);
+    }
   }
 
   &__heading-3 {
     @extend %heading;
 
-    font-size: 6rem;
+    white-space: nowrap;
+
+    font-size: calc(0.5rem + 4vw);
     letter-spacing: 1.5rem;
 
     transform: skew(-15deg) translate(8rem, -6rem) rotate(-4deg);
+
+    @include respond(laptop) {
+      font-size: calc(1rem + 2.5vw);
+      transform: skew(-15deg) translate(5rem, -4rem) rotate(-4deg);
+    }
   }
 
   &__left {

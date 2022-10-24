@@ -10,6 +10,10 @@
     width: 70vw;
     height: 100%;
 
+    @include respond(laptop) {
+      width: 60vw;
+    }
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,8 +34,17 @@
 
     display: flex;
 
+    @include respond(laptop) {
+      margin: 0;
+      width: 95%;
+    }
+
     &__left {
       width: 50%;
+
+      @include respond(laptop) {
+        width: 40%;
+      }
       background: linear-gradient(
           rgba($color-second, 0.2),
           rgba($color-third, 0.2)
@@ -44,6 +57,10 @@
 
     &__right {
       width: 50%;
+
+      @include respond(laptop) {
+        width: 60%;
+      }
     }
   }
 

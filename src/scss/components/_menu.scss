@@ -26,5 +26,11 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 7rem;
+
+    @include respond(laptop) {
+      margin: -3rem 2rem 6rem 2rem;
+      padding: 2rem 1rem;
+      gap: 3rem;
+    }
   }
 }

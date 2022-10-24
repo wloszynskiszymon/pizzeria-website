@@ -52,4 +52,9 @@
 
   margin-top: auto;
   margin-bottom: 7rem;
+
+  @include respond(laptop) {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
 }

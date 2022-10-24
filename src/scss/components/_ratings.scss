@@ -11,17 +11,51 @@
 
   position: relative;
 
+  /* width */
+  ::-webkit-scrollbar {
+    height: 0.5rem;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $color-first;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $color-second;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $color-fifth;
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+
+    cursor: grab;
+
+    // To make scroll horizontal
+    overflow-x: auto;
+    transform: rotateX(180deg);
+  }
+
   &__heading {
     position: absolute;
     top: 0;
   }
 
   &__container {
-    width: 42rem;
+    min-width: 42rem;
     min-height: 47rem;
     height: fit-content;
     background: linear-gradient($color-second, $color-fifth);
     margin: 2rem 3rem 0 3rem;
+
+    // To make scroll horizontal
+    transform: rotateX(180deg) translateY(2rem);
 
     display: grid;
     grid-template-rows: min-content min-content 1fr;
