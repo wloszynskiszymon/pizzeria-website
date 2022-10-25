@@ -36,17 +36,18 @@
       width: 15rem;
       height: 12rem;
 
-      @include respond(laptop) {
-        width: 12rem;
-        height: 10rem;
-        transform: translateY(1rem);
-      }
       border-radius: 0 0 50% 50%;
       background: linear-gradient($color-third, $color-forth);
       box-shadow: rgba(0, 0, 0, 0.1) 1rem 1rem 5rem,
         rgba(0, 0, 0, 0.1) -1rem 1rem 5rem;
 
       transform: translateY(2rem);
+
+      @include respond(laptop) {
+        width: 12rem;
+        height: 10rem;
+        transform: translateY(1rem);
+      }
     }
 
     &__logo {
@@ -78,5 +79,9 @@
     font-weight: bold;
     white-space: nowrap;
     transition: 0.5s;
+
+    @include respond(tablet) {
+      display: none;
+    }
   }
 }

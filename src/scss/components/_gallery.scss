@@ -12,7 +12,12 @@
   overflow: hidden;
 
   &__heading {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+
+    @include respond(laptop) {
+      font-size: 4.2rem;
+      padding: 0 2rem;
+    }
   }
 
   &__main {
@@ -28,6 +33,8 @@
     width: 100rem;
     height: 60rem;
 
+    margin: 2rem;
+
     @include respond(desktop) {
       width: 90rem;
       height: 50rem;
@@ -36,6 +43,16 @@
     @include respond(laptop) {
       width: 70rem;
       height: 40rem;
+    }
+
+    @include respond(tablet) {
+      width: 60rem;
+      height: 35rem;
+    }
+
+    @include respond(phone) {
+      width: 50rem;
+      height: 30rem;
     }
 
     border: 1rem solid $color-second;

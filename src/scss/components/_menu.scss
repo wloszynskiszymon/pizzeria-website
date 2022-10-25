@@ -15,11 +15,19 @@
     padding: 4rem 2rem;
 
     border: 1rem solid $color-second;
+    border-radius: 3rem;
+
     background: linear-gradient(
       rgba($color-forth, 0.3),
       rgba($color-third, 0.3)
     );
-    border-radius: 3rem;
+
+    @include respond(phone) {
+      background: linear-gradient(
+        rgba($color-forth, 0.7),
+        rgba($color-third, 0.7)
+      );
+    }
 
     display: flex;
     justify-content: space-evenly;
@@ -31,6 +39,14 @@
       margin: -3rem 2rem 6rem 2rem;
       padding: 2rem 1rem;
       gap: 3rem;
+    }
+
+    @include respond(phone) {
+      background: none;
+      border: none;
+      margin: 0;
+      margin-bottom: 5rem;
+      padding: 0;
     }
   }
 }

@@ -32,7 +32,14 @@
     @include respond(laptop) {
       font-size: calc(8rem + 4vw);
 
-      margin-top: calc($nav-height + 7.5rem);
+      margin-top: calc($nav-height + 6.5rem);
+
+      transform: skew(-14deg) rotate(-4deg) translate(3rem, -1rem);
+    }
+
+    @include respond(tablet) {
+      transform: skew(-14deg) rotate(-4deg) translateX(-1rem);
+      margin-top: calc($nav-height + 6.5rem);
     }
   }
 
@@ -47,6 +54,10 @@
       font-size: calc(6rem + 3vw);
       transform: skew(-14deg) translate(12rem, -3rem) rotate(-4deg);
     }
+
+    @include respond(tablet) {
+      transform: skew(-14deg) translate(8rem, -2.5rem) rotate(-4deg);
+    }
   }
 
   &__heading-3 {
@@ -57,11 +68,20 @@
     font-size: calc(0.5rem + 4vw);
     letter-spacing: 1.5rem;
 
+    margin-bottom: 4rem;
+
     transform: skew(-15deg) translate(8rem, -6rem) rotate(-4deg);
 
     @include respond(laptop) {
+      margin-bottom: 2rem;
       font-size: calc(1rem + 2.5vw);
       transform: skew(-15deg) translate(5rem, -4rem) rotate(-4deg);
+    }
+
+    @include respond(tablet) {
+      padding: 0 2rem;
+      font-size: calc(0.5rem + 5vw);
+      transform: skew(-15deg) translate(2rem, -3rem) rotate(-4deg);
     }
   }
 
@@ -72,6 +92,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include respond(tablet) {
+      grid-column: 1 / -1;
+    }
   }
 
   &__right {
@@ -90,5 +114,10 @@
 
     transform: skew(-10deg) translateX(6.5rem);
     border-left: 1rem solid $color-first;
+
+    @include respond(tablet) {
+      background: none;
+      display: none;
+    }
   }
 }

@@ -8,6 +8,11 @@
 
   padding: 10rem 0;
 
+  @include respond(tablet) {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+
   &__map {
     position: relative;
     width: 55vw;
@@ -15,6 +20,12 @@
 
     @include respond(laptop) {
       width: 45vw;
+    }
+
+    @include respond(tablet) {
+      width: 90vw;
+      height: 40rem;
+      margin-bottom: 4rem;
     }
 
     border: 1rem solid $color-second;
@@ -38,6 +49,10 @@
       width: 45vw;
     }
 
+    @include respond(tablet) {
+      width: 90vw;
+    }
+
     background: linear-gradient($color-second, $color-fifth);
 
     overflow: hidden;
@@ -52,5 +67,9 @@
     color: white;
     text-shadow: $text-shadow-1;
     padding: 2rem;
+
+    @include respond(phone-small) {
+      font-size: 2.5rem;
+    }
   }
 }

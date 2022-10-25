@@ -2,6 +2,16 @@
   width: $card-width;
   height: $card-height;
 
+  @include respond(phone) {
+    width: calc($card-width + 5rem);
+    height: calc($card-height + 10rem);
+  }
+
+  @include respond(phone-small) {
+    width: calc($card-width + 10rem);
+    height: calc($card-height + 15rem);
+  }
+
   border-radius: 2rem;
 
   overflow: hidden;
@@ -34,6 +44,10 @@
     padding: 0.2rem 1rem;
     font-size: 3.5rem;
 
+    @include respond(phone-small) {
+      font-size: 5rem;
+    }
+
     &::before {
       transform: skew(-15deg);
     }
@@ -45,6 +59,10 @@
     margin: 0 auto;
     width: min-content;
     padding: 0.1rem 1rem;
+
+    @include respond(phone-small) {
+      font-size: 3rem;
+    }
   }
 
   &__discount {
@@ -105,25 +123,34 @@
     text-shadow: $text-shadow-1;
     text-align: center;
     margin: 4rem 2rem 0 2rem;
+
+    @include respond(phone-small) {
+      font-size: 2.5rem;
+    }
   }
 
   &__price {
     position: absolute;
     bottom: 0;
     left: 5rem;
+
     color: white;
     text-shadow: $text-shadow-1;
 
     text-align: center;
     text-transform: lowercase;
     white-space: nowrap;
+
     font-size: 3rem;
     letter-spacing: 0.3rem;
+
     padding: 0 3rem;
-    z-index: 15;
-    width: fit-content;
     margin-bottom: 0.5rem;
+
+    width: fit-content;
     height: fit-content;
+
+    z-index: 15;
 
     &__container {
       width: 100%;
@@ -136,6 +163,10 @@
 
     &__heading {
       @extend %heading;
+
+      @include respond(phone-small) {
+        font-size: 3.5rem;
+      }
     }
   }
 }
