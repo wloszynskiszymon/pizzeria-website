@@ -8,13 +8,18 @@
   gap: 2rem;
 
   position: relative;
+  background: transparent;
 
-  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
-    url(../img/images/header-background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  // background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+  //   url(../img/images/header-background.jpg);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // // background-attachment: fixed;
+
+  // @include respond(tablet) {
+  //   background-size: cover 100% !important;
+  // }
 
   overflow: hidden;
 

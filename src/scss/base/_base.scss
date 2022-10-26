@@ -37,3 +37,14 @@ body {
 
   grid-template-columns: 100%;
 }
+
+.background {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+    url(../img/images/header-background.jpg);
+  background-position-y: 50%;
+  height: 100%;
+  width: 100%;
+}

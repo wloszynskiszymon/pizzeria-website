@@ -1,12 +1,7 @@
 .menu {
   grid-row: menu-start / menu-end;
 
-  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
-    url(../img/images/header-background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background: transparent;
 
   overflow: hidden;
 
