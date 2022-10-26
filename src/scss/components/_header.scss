@@ -21,7 +21,7 @@
   &__heading-1 {
     @extend %heading;
 
-    margin-top: calc($nav-height + 12.5rem);
+    margin-top: calc(var(--nav-height) + 12.5rem);
 
     font-size: calc(8rem + 7vw);
 
@@ -32,14 +32,14 @@
     @include respond(laptop) {
       font-size: calc(8rem + 4vw);
 
-      margin-top: calc($nav-height + 6.5rem);
+      margin-top: calc(var(--nav-height) + 6.5rem);
 
       transform: skew(-14deg) rotate(-4deg) translate(3rem, -1rem);
     }
 
     @include respond(tablet) {
       transform: skew(-14deg) rotate(-4deg) translateX(-1rem);
-      margin-top: calc($nav-height + 6.5rem);
+      margin-top: calc(var(--nav-height) + 6.5rem);
     }
   }
 

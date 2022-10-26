@@ -15,11 +15,19 @@
 
     <link rel="stylesheet" href="src/scss/main.scss">
     <script defer type="module" src="./src/svg.js"></script>
+    <script defer type="module" src="app.js"></script>
 </head>
 
 <body class="container">
 
     <nav class="nav">
+        <!-- Responsive for tablets and mobiles -->
+        <btn class="nav__button">
+            <img class="svg nav__icon" src="./src/img/icons/nav.svg" alt="Icon nav">
+        </btn>
+
+        <!-- For desktop -->
+
         <div class="nav__left">
             <div class="nav__item nav__about">
                 <a href="#about" class="nav__link">O nas</a>
@@ -54,6 +62,15 @@
         </div>
     </nav>
 
+    <div class="nav__box hidden">
+        <a href="#about" class="nav__box__link">O nas</a>
+        <a href="#menu" class="nav__box__link">Menu</a>
+        <a href="#delivery" class="nav__box__link">Dowóz</a>
+        <a href="#gallery" class="nav__box__link">Galeria</a>
+        <a href="#ratings" class="nav__box__link">Opinie</a>
+        <a href="#contact" class="nav__box__link">Kontakt</a>
+    </div>
+
     <header class="header">
         <div class="header__left">
             <h1 class="header__heading-1">Pizza</h1>
@@ -69,7 +86,7 @@
 
     </header>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="about__section">
             <div class="about__container">
                 <div class="about__container__left">
@@ -116,7 +133,7 @@
         </div>
     </section>
 
-    <section class="menu">
+    <section id="menu" class="menu">
         <h1 class="heading-1">NASZE MENU</h1>
         <div class="menu__container">
             <!-- Card start -->
@@ -201,7 +218,7 @@
             <div class="card">
                 <div id="vesuvio" class="card__top">
                     <h3 class="card__h3">Pizza</h3>
-                    <h1 class="card__h1">vesuvio</h1>
+                    <h1 class="card__h1">Vesuvio</h1>
                 </div>
                 <div class="card__main">
                     <p class="card__ingredients">
@@ -230,7 +247,7 @@
         </div>
     </section>
 
-    <section class="delivery">
+    <section id="delivery" class="delivery">
         <div class="delivery__map">
             <iframe id="map"
                 src="https://maps.google.com/maps?q=fredry%2013%20poznan&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -253,7 +270,7 @@
     </section>
 
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
         <h1 class="heading-1 gallery__heading">Nasza restauracja</h1>
         <div class="gallery__main">
             <div class="gallery__container">
@@ -268,7 +285,7 @@
     </section>
 
 
-    <section class="ratings">
+    <section id="ratings" class="ratings">
         <h1 class="heading-1 ratings__heading">Opinie klientów</h1>
         <div class="ratings__main">
 
@@ -281,11 +298,11 @@
                 </div>
 
                 <div class="ratings__star__container">
-                    <img class="ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 1">
-                    <img class="ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 2">
-                    <img class="ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 3">
-                    <img class="ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 4">
-                    <img class="ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 5">
+                    <img class="svg ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 1">
+                    <img class="svg ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 2">
+                    <img class="svg ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 3">
+                    <img class="svg ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 4">
+                    <img class="svg ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 5">
                 </div>
 
                 <p class="ratings__text">
@@ -304,11 +321,11 @@
                 </div>
 
                 <div class="ratings__star__container">
-                    <img class="ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 1">
-                    <img class="ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 2">
-                    <img class="ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 3">
-                    <img class="ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 4">
-                    <img class="ratings__star" src="./src/img/icons/star.svg" alt="Icon 5">
+                    <img class="svg ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 1">
+                    <img class="svg ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 2">
+                    <img class="svg ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 3">
+                    <img class="svg ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 4">
+                    <img class="svg ratings__star" src="./src/img/icons/star.svg" alt="Icon 5">
                 </div>
 
 
@@ -330,11 +347,11 @@
                 </div>
 
                 <div class="ratings__star__container">
-                    <img class="ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 1">
-                    <img class="ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 2">
-                    <img class="ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 3">
-                    <img class="ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 4">
-                    <img class="ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 5">
+                    <img class="svg ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 1">
+                    <img class="svg ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 2">
+                    <img class="svg ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 3">
+                    <img class="svg ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 4">
+                    <img class="svg ratings__star ratings__star--filled" src="./src/img/icons/star.svg" alt="Icon 5">
                 </div>
 
                 <p class="ratings__text">
@@ -350,7 +367,7 @@
 
     </section>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="footer__left">
             <div class="footer__left__container">
                 <img class="footer__icon" src="./src/img/icons/phone.svg" alt="Phone icon">

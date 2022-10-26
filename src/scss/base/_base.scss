@@ -9,6 +9,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 
   @include respond(phone) {
     font-size: 50%;
@@ -21,7 +22,6 @@ html {
 
 body {
   font-family: "Signika Negative", sans-serif;
-  scroll-behavior: smooth;
 }
 
 .container {
