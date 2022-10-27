@@ -16,7 +16,7 @@
 
   &__box {
     position: fixed;
-    top: calc(var(--nav-height) + 0.04rem);
+    top: var(--nav-height);
     right: 0;
     width: 40vw;
     height: 40rem;
@@ -52,27 +52,34 @@
     position: absolute;
     top: 0;
     right: 2rem;
+    background: transparent;
+    border: none;
     width: var(--nav-height);
     height: var(--nav-height);
 
     display: none;
 
-    &__icon {
-      path {
-        fill: white;
-      }
-    }
+    z-index: 99999999999;
 
     @include respond(tablet) {
       display: flex;
       justify-content: center;
       align-items: center;
-
-      transform: scale(0.7);
     }
 
-    @include respond(tablet) {
-      transform: scale(1.5);
+    @include respond(phone) {
+      right: 1rem;
+    }
+
+    &__icon {
+      width: 100%;
+      height: 100%;
+
+      transform: scale(0.8);
+
+      @include respond(phone) {
+        transform: scale(0.7);
+      }
     }
   }
 

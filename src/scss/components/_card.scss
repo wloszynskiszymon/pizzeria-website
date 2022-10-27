@@ -12,8 +12,9 @@
     height: calc($card-height + 15rem);
   }
 
-  border-radius: 2rem;
+  position: relative;
 
+  border-radius: 2rem;
   overflow: hidden;
 
   display: grid;
@@ -43,6 +44,8 @@
     transform: translate(1rem, 2.5rem) rotate(-2deg);
     padding: 0.2rem 1rem;
     font-size: 3.5rem;
+
+    z-index: 5;
 
     @include respond(phone-small) {
       font-size: 5rem;

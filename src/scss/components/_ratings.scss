@@ -7,29 +7,29 @@
   align-items: center;
   flex-wrap: wrap;
 
-  padding: 10rem 2rem;
-
   position: relative;
 
-  /* width */
-  ::-webkit-scrollbar {
-    height: 0.5rem;
-  }
+  overflow: hidden;
 
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: $color-first;
-  }
+  // /* width */
+  // ::-webkit-scrollbar {
+  //   height: 0.5rem;
+  // }
 
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: $color-second;
-  }
+  // /* Track */
+  // ::-webkit-scrollbar-track {
+  //   background: $color-first;
+  // }
 
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: $color-fifth;
-  }
+  // /* Handle */
+  // ::-webkit-scrollbar-thumb {
+  //   background: $color-second;
+  // }
+
+  // /* Handle on hover */
+  // ::-webkit-scrollbar-thumb:hover {
+  //   background: $color-fifth;
+  // }
 
   &__main {
     display: flex;
@@ -38,9 +38,11 @@
     cursor: grab;
 
     // To make scroll horizontal
+
     overflow-x: auto;
-    transform: rotateX(180deg);
+    transform: rotate(180deg);
     padding: 2rem 0;
+    margin: 12rem 2rem;
   }
 
   &__heading {
@@ -50,13 +52,14 @@
 
   &__container {
     min-width: 42rem;
-    min-height: 47rem;
+    min-height: 45rem;
+    max-width: 50rem;
     height: fit-content;
     background: linear-gradient($color-second, $color-fifth);
     margin: 2rem 3rem 0 3rem;
 
     // To make scroll horizontal
-    transform: rotateX(180deg) translateY(2rem);
+    transform: rotate(180deg) translateY(2rem);
 
     display: grid;
     grid-template-rows: min-content min-content 1fr;
@@ -64,8 +67,6 @@
 
     justify-items: center;
     align-items: center;
-
-    // border: 1rem solid $color-first;
 
     overflow: hidden;
     border-radius: 2rem;
@@ -76,9 +77,6 @@
   &__star {
     width: 4rem;
     height: 4rem;
-    &--filled path {
-      fill: $color-forth;
-    }
 
     &__container {
       grid-row: 1 / 2;
