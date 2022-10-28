@@ -1,5 +1,9 @@
 // Imagined data. Real one would be probably stored in some kind of database alongside with images. Function require() is needed so JavaScript knows image path after Parcel builds the project and changes all names of images and files.
-export const initMenu = function () {
+
+// How many dishes will be rendered on smaller screens
+const NUM_OF_COLLAPSABLE_DISHES = 2;
+
+export const getAllMenuDishes = function () {
   const menu = [
     {
       id: 1,
@@ -83,6 +87,14 @@ export const initMenu = function () {
       price: 32.99,
     },
   ];
+
+  menu.forEach((dish, arrayIndex) => {
+    arrayIndex < NUM_OF_COLLAPSABLE_DISHES
+      ? (dish.collapsable = false)
+      : (dish.collapsable = true);
+  });
+
+  console.log(menu);
 
   return menu;
 };

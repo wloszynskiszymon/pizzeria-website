@@ -1,3 +1,17 @@
 .hidden {
   display: none !important;
 }
+
+// display none only for smaller screens (less or equal than 768px)
+.hidden--mobile {
+  @media only screen and (min-width: 48.0625em) {
+    display: none !important;
+  } //768px
+}
+
+// display none only for bigger screens (more than 768px)
+.hidden--desktop {
+  @media only screen and (max-width: 48em) {
+    display: none !important;
+  } //768px
+}

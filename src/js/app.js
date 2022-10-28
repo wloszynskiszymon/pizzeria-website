@@ -10,9 +10,8 @@ class App {
 
   constructor() {
     // Get menu and save it
-    this.state.pizzas = menu.initMenu();
-    console.log(this.state.pizzas);
-    card.renderMenu(this.state.pizzas);
+    this.state.pizzas = menu.getAllMenuDishes();
+    card.initMenu(this.state.pizzas);
   }
 }
 
