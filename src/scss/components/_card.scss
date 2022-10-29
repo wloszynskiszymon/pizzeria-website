@@ -15,20 +15,16 @@
   position: relative;
 
   border-radius: 2rem;
-  overflow: hidden;
 
   display: grid;
   grid-template-rows: 1.5fr 1fr;
 
   box-shadow: $box-shadow-1;
 
+  overflow: hidden;
+
   &__top {
     grid-template-rows: 1 / 2;
-    // background: linear-gradient(
-    //     rgba($color-second, 0.2),
-    //     rgba($color-third, 0.2)
-    //   ),
-    //   url(../img/images/kropodilla.jpg);
 
     background-size: cover;
     background-repeat: no-repeat;

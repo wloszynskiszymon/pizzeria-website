@@ -94,7 +94,5 @@ export const getAllMenuDishes = function () {
       : (dish.collapsable = true);
   });
 
-  console.log(menu);
-
   return menu;
 };

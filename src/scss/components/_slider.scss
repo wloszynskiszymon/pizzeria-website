@@ -1,0 +1,144 @@
+.slider {
+  width: 100rem;
+  height: 60rem;
+
+  margin: 2rem;
+
+  z-index: 150;
+
+  @include respond(desktop) {
+    width: 90rem;
+    height: 50rem;
+  }
+
+  @include respond(laptop) {
+    width: 70rem;
+    height: 40rem;
+  }
+
+  @include respond(tablet) {
+    width: 60rem;
+    height: 35rem;
+  }
+
+  @include respond(phone) {
+    width: 50rem;
+    height: 30rem;
+  }
+
+  overflow: hidden;
+  border-radius: 2rem;
+
+  box-shadow: $box-shadow-1;
+
+  position: relative;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: linear-gradient(
+  //     rgba($color-second, 0.2),
+  //     rgba($color-third, 0.2)
+  //   );
+  //   z-index: 5000;
+  // }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    // background-color: green;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 50;
+  }
+
+  &__dot {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: $color-first;
+    border: 0.3rem solid $color-fifth;
+    margin: 0 0.5rem;
+
+    cursor: pointer;
+
+    &--active {
+      background: $color-fifth;
+      border: 0.3rem solid $color-sixth;
+      transform: scale(1.2);
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5rem;
+    height: 8rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    z-index: 5000;
+    background-color: rgba($color-first, 0.9);
+    color: $color-sixth;
+    text-shadow: $text-shadow-1;
+    border: none;
+
+    cursor: pointer;
+
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: rgba($color-third, 0.9);
+    }
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+}
+
+#slider-image {
+  &-1,
+  &-2,
+  &-3,
+  &-4,
+  &-5 {
+    transition: transform 1s;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  // When reloading there will be no moving animation done in JavaScript
+  &-1 {
+    z-index: 5;
+  }
+
+  &-2,
+  &-3,
+  &-4,
+  &-5 {
+    z-index: 4;
+  }
+}

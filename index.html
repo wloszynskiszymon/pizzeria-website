@@ -46,7 +46,7 @@
 
         <div class="nav__middle">
             <a class="nav__middle__link" href="#start">
-                <img class="nav__middle__logo" src="logo.svg" />
+                <img class="nav__middle__logo" src="src/img/images/logo.png" />
             </a>
         </div>
 
@@ -168,14 +168,31 @@
     <section id="gallery" class="gallery">
         <h1 class="heading-1 gallery__heading">Nasza restauracja</h1>
         <div class="gallery__main">
-            <div class="gallery__container">
-                <img src="./src/img/images/restaurant-photo-1.jpg" class="gallery__image" alt="Photo 1">
-                <img src="./src/img/images/restaurant-photo-2.jpg" class="gallery__image" alt="Photo 2">
-                <img src="./src/img/images/restaurant-photo-3.jpg" class="gallery__image" alt="Photo 3">
-                <img src="./src/img/images/restaurant-photo-4.jpg" class="gallery__image" alt="Photo 4">
-                <img src="./src/img/images/restaurant-photo-5.jpg" class="gallery__image" alt="Photo 5">
+            <div class="slider">
+                <img src="./src/img/images/restaurant-photo-1.jpg" id="slider-image-1" class="slider__image"
+                    alt="Photo 1">
+                <img src="./src/img/images/restaurant-photo-2.jpg" id="slider-image-2" class="slider__image"
+                    alt="Photo 2">
+                <img src="./src/img/images/restaurant-photo-3.jpg" id="slider-image-3" class="slider__image"
+                    alt="Photo 3">
+                <img src="./src/img/images/restaurant-photo-4.jpg" id="slider-image-4" class="slider__image"
+                    alt="Photo 4">
+                <img src="./src/img/images/restaurant-photo-5.jpg" id="slider-image-5" class="slider__image"
+                    alt="Photo 5">
+
+
+                <button class="slider__btn slider__btn--left"><span>&larr;</span></button>
+                <button class="slider__btn slider__btn--right"><span>&rarr;</span></button>
+
+
+
+                <div class="slider__dots">
+                    <!-- Dots rendered with JavaScript -->
+                </div>
             </div>
         </div>
+
+
 
     </section>
 

@@ -4,13 +4,15 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "sections/header";
+@import "sections/about";
+@import "sections/menu";
+@import "sections/delivery";
+@import "sections/gallery";
+@import "sections/ratings";
+@import "sections/footer";
+
 @import "components/nav";
-@import "components/header";
-@import "components/about";
 @import "components/card";
+@import "components/slider";
 @import "components/daily-discount";
-@import "components/menu";
-@import "components/delivery";
-@import "components/gallery";
-@import "components/ratings";
-@import "components/footer";

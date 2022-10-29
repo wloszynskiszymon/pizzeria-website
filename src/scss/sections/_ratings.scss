@@ -11,31 +11,12 @@
 
   overflow: hidden;
 
-  // /* width */
-  // ::-webkit-scrollbar {
-  //   height: 0.5rem;
-  // }
-
-  // /* Track */
-  // ::-webkit-scrollbar-track {
-  //   background: $color-first;
-  // }
-
-  // /* Handle */
-  // ::-webkit-scrollbar-thumb {
-  //   background: $color-second;
-  // }
-
-  // /* Handle on hover */
-  // ::-webkit-scrollbar-thumb:hover {
-  //   background: $color-fifth;
-  // }
-
   &__main {
     display: flex;
     align-items: center;
 
     cursor: grab;
+    user-select: none;
 
     // To make scroll horizontal
 

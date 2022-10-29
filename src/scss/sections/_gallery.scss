@@ -1,0 +1,26 @@
+.gallery {
+  grid-row: gallery-start / gallery-end;
+  padding: 3rem 0 10rem 0;
+
+  background: transparent;
+
+  overflow: hidden;
+
+  &__heading {
+    margin-bottom: 2rem;
+
+    @include respond(laptop) {
+      font-size: 4.2rem;
+      padding: 0 2rem;
+    }
+  }
+
+  &__main {
+    width: 100%;
+    height: max-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

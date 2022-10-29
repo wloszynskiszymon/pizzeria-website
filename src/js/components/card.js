@@ -41,7 +41,7 @@ class Card {
     });
   }
 
-  _renderLink(menu) {
+  _renderLink() {
     const markup = `
         <a class="link-1 menu__button hidden--mobile">${
           this._loadedOnPhone ? "Rozwiń" : "Zwiń"
