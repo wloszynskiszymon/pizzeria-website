@@ -22,15 +22,16 @@ html {
 
 body {
   font-family: "Signika Negative", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: $text-shadow-1;
 }
 
 .container {
   display: grid;
   grid-template-rows:
-    [header-start] max-content [header-end info-start] minmax(
-      55rem,
-      max-content
-    )
+    [header-start] max-content [header-end info-start]
+    max-content
     [info-end menu-start]
     max-content
     [menu-end delivery-start] max-content [delivery-end gallery-start] max-content [gallery-end ratings-start] max-content [ratings-end footer-start] max-content [footer-end];
@@ -61,10 +62,10 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $color-second;
+  background: $color-fifth;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $color-fifth;
+  background: $color-sixth;
 }

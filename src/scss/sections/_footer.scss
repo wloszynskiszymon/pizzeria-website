@@ -10,61 +10,30 @@
   @include respond(tablet) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+    gap: 0rem;
   }
 
   justify-items: center;
   align-items: center;
 
-  font-weight: 300;
-  color: white;
-  text-shadow: $text-shadow-1;
-  padding: 2rem;
-
-  &__icon {
-    width: 3rem;
-    height: 3rem;
-    margin-right: 1rem;
-
-    @include respond(tablet) {
-      width: 2.3rem;
-      height: 2.3rem;
-    }
-  }
-
   &__left {
     grid-column: 1 / 2;
 
+    padding: 2rem 0;
+
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 
     @include respond(tablet) {
       grid-row: 2 / 3;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    &__container {
-      padding: 0.5rem;
-      margin: 0.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      font-size: 1.6rem;
-
-      @include respond(tablet) {
-        font-size: 2.3rem;
-      }
     }
   }
 
   &__logo {
     grid-column: 2 / 3;
-
-    @include respond(tablet) {
-      width: 15rem;
-      height: 15rem;
-    }
+    width: 15rem;
+    height: 15rem;
 
     @include respond(tablet) {
       grid-column: 1 / 2;
@@ -83,6 +52,7 @@
     }
 
     &__text {
+      width: 70%;
       font-size: 1.8rem;
 
       a {
@@ -90,6 +60,7 @@
       }
 
       @include respond(tablet) {
+        width: 90%;
         padding: 2rem;
         font-size: 2.2rem;
         a {
@@ -100,7 +71,7 @@
   }
 
   &__author {
-    color: white;
+    color: lightgrey;
     img {
       width: 1.8rem;
       height: 1.8rem;
@@ -109,6 +80,10 @@
         width: 2.5rem;
         height: 2.5rem;
       }
+    }
+
+    &:hover {
+      color: $color-first;
     }
   }
 }

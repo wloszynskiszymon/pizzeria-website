@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Fest</title>
+    <title>Pizza Fest | Pizzeria w sercu Poznania</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
         rel="stylesheet">
 
 
+    <link rel="icon" href="src/img/images/pizza-fest-favicon.png">
     <link rel="stylesheet" href="src/scss/main.scss">
     <script defer type="module" src="./src/js/app.js"></script>
 
@@ -30,35 +31,35 @@
         <!-- For desktop -->
 
         <div class="nav__left">
-            <div class="nav__item nav__about">
-                <a href="#about" class="nav__link">O nas</a>
+            <div class="nav__item">
+                <a href="about" class="nav__link">O nas</a>
             </div>
 
-            <div class="nav__item nav__menu">
-                <a href="#menu" class="nav__link">Menu</a>
+            <div class="nav__item">
+                <a href="menu" class="nav__link">Menu</a>
             </div>
 
-            <div class="nav__item nav__gallery">
-                <a href="#range" class="nav__link">Dowóz</a>
+            <div class="nav__item">
+                <a href="delivery" class="nav__link">Dowóz</a>
             </div>
 
         </div>
 
         <div class="nav__middle">
-            <a class="nav__middle__link" href="#start">
-                <img class="nav__middle__logo" src="src/img/images/logo.png" />
+            <a class="nav__middle__link" href="#header">
+                <img class="nav__middle__logo" src="src/img/images/pizza-fest-logo.png" />
             </a>
         </div>
 
         <div class="nav__right">
-            <div class="nav__item nav__gallery">
-                <a href="#gallery" class="nav__link">Galeria</a>
+            <div class="nav__item">
+                <a href="gallery" class="nav__link">Galeria</a>
             </div>
-            <div class="nav__item nav__ratings">
-                <a href="#ratings" class="nav__link">Opinie</a>
+            <div class="nav__item">
+                <a href="ratings" class="nav__link">Opinie</a>
             </div>
-            <div class="nav__item nav__contact">
-                <a href="#contact" class="nav__link">Kontakt</a>
+            <div class="nav__item">
+                <a href="contact" class="nav__link">Kontakt</a>
             </div>
         </div>
     </nav>
@@ -72,7 +73,7 @@
         <a href="#contact" class="nav__box__link">Kontakt</a>
     </div>
 
-    <header class="header">
+    <header id="header" class="header">
         <div class="header__left">
             <h1 class="header__heading-1">Pizza</h1>
             <h2 class="header__heading-2">Fest</h2>
@@ -96,8 +97,12 @@
 
                 <div class="about__container__right">
                     <h1 class="heading-1">O NAS</h1>
-                    <p class="about__text">Naszą restaurację prowadzimy od 30 lat, zlokalizowana jest ona w centrum
-                        Poznania i codziennie przyciąga ona setki klientów.
+                    <p class="about__text">
+                        Pizzeria Pizza Fest przyciąga niepowtarzalnym klimatem, doskonałym jedzeniem oraz świetną
+                        lokalizacją - w samym centrum zabytkowego Poznania. Nasi kucharze oraz kelnerzy zadbają o
+                        Państwa dobry nastrój. Potrawy przyrządzane są od podstaw w oparciu o naturalne i świeże
+                        produkty i zaspokajają od lat podniebienia naszych gości. Pizza Fest to doskonałe miejsce na
+                        obiad po pracy, po szkole lub rodzinny obiad, spotkanie przy kawie czy romantyczną kolację.
                     </p>
                 </div>
             </div>
@@ -152,14 +157,35 @@
 
         <div class="delivery__container">
             <h1 class="heading-1 delivery__heading">Dowóz</h1>
-            <p class="delivery__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magni nulla
-                explicabo tempore exercitationem error sunt dolor assumenda harum provident laudantium similique
-                cupiditate, beatae ab? Fugit earum porro nam expedita?
-                Tempore veritatis velit exercitationem quaerat consequuntur illum magnam reprehenderit ipsam vero,
-                commodi eum. Maiores magni provident qui ipsam quo placeat architecto sunt. Asperiores obcaecati
-                consectetur soluta porro mollitia nisi provident?
-
+            <p class="delivery__text">Dowozimy naszą pizzę na tereniecałego Poznania.
+                Cena dowozu wynosi <span class="underline">8 zł </span>. W
+                przypadku zamówienia <span class="underline">przekraczającego 50 zł dowóz jest bezpłatny </span>!
+                Zachęcamy do skorzystania z naszej
+                codziennej promocji!
             </p>
+
+            <table class="table delivery__table">
+                <tr>
+                    <th>Pon-Pt</th>
+                    <th>Sb-Nd</th>
+                </tr>
+                <tr>
+                    <td>8:00-21:00</td>
+                    <td>9:00-17:00</td>
+                </tr>
+            </table>
+
+            <p class="delivery__text delivery__text--down"><span class="underline">Przypominamy, że zamówienia z dowozem
+                    przyjmujemy co
+                    najwyżej godzinę przed
+                    zamknięciem!
+                </span>
+            </p>
+
+            <div class="icon-text__container">
+                <img class="icon-text__icon" src="./src/img/icons/phone.svg" alt="Phone icon">
+                <p class="icon-text__text">+48 132 465 798</p>
+            </div>
         </div>
 
     </section>
@@ -218,9 +244,8 @@
                 </div>
 
                 <p class="ratings__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt totam, dolore exercitationem saepe
-                    dolorum eos deleniti officia recusandae ullam aspernatur quidem labore vel fugit neque, animi beatae
-                    minima iusto? Accusantium.
+                    Najlepsza restauracja w jakiej byłem! Obsługa jest bardzo uprzejma, a jedzenie przepyszne! Polecam
+                    odwiedzić ją każdemu! 5 gwiazdek
                 </p>
             </div>
 
@@ -242,10 +267,7 @@
 
 
                 <p class="ratings__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime sapiente vero autem nam commodi
-                    delectus odit placeat nesciunt accusamus, fugit cum a earum neque similique, at perferendis officiis
-                    doloremque provident.
-                    Nihil nam quam qui esse, earum distinctio aliquam ipsum suscipit neque molestias sunt totam?
+                    Bardzo dobra restauracja! Jedzenie bardzo dobre.
                 </p>
 
             </div>
@@ -267,11 +289,8 @@
                 </div>
 
                 <p class="ratings__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis similique, assumenda velit vero
-                    pariatur
-                    quam enim dignissimos dolorum est nemo consectetur, deleniti explicabo aliquid perferendis fugiat?
-                    Vitae
-                    labore autem libero.
+                    Pizza Fest jest jedną z najlepszych pizzerii w Poznaniu. Bardzo często tam bywam po pracy, klimat
+                    jest niepowtarzalny! Zdecydowanie polecam! Pizza Fest dobra jest!
 
                 </p>
             </div>
@@ -281,24 +300,30 @@
 
     <footer id="contact" class="footer">
         <div class="footer__left">
-            <div class="footer__left__container">
-                <img class="footer__icon" src="./src/img/icons/phone.svg" alt="Phone icon">
-                <p class="">+48 132 465 798</p>
+            <div class="icon-text__container">
+                <img class="icon-text__icon" src="./src/img/icons/phone.svg" alt="Phone icon">
+                <p class="icon-text__text footer__left__text">+48 132 465 798</p>
             </div>
-            <div class="footer__left__container">
-                <img class="footer__icon" src="./src/img/icons/location.svg" alt="Location icon">
-                <p class="">Stary Rynek 25, 61-772 Poznań</p>
+            <div class="icon-text__container">
+                <img class="icon-text__icon" src="./src/img/icons/location.svg" alt="Location icon">
+                <p class="icon-text__text footer__left__text">Stary Rynek 25, 61-772 Poznań</p>
             </div>
-            <div class="footer__left__container">
-                <img class="footer__icon" src="./src/img/icons/calendar.svg" alt="Calendar icon">
-                <p class="">
-                    pn-sb: 8-21
-                    nd: 9-16
-                </p>
+            <div class="icon-text__container">
+                <img class="icon-text__icon" src="./src/img/icons/calendar.svg" alt="Calendar icon">
+                <table class="table">
+                    <tr>
+                        <th>Pon-Pt</th>
+                        <th>Sb-Nd</th>
+                    </tr>
+                    <tr>
+                        <td>8:00-21:00</td>
+                        <td>9:00-17:00</td>
+                    </tr>
+                </table>
             </div>
 
         </div>
-        <img class="footer__logo" src="./src/img/images/logo.png" alt="Logo">
+        <img class="footer__logo" src="./src/img/images/pizza-fest-logo.png" alt="Logo">
         <div class="footer__right">
             <p class="footer__right__text">
                 Copyright © by
@@ -306,10 +331,8 @@
                     <img src="./src/img/icons/github.svg" alt="GitHub icon"> SZYMON WŁOSZYŃSKI</a>. To get to my GitHub
                 please click
                 my
-                name. Location and name is imaginary.
-                All photos are taken from free image websites.
+                name. Location of this imaginary pizzeria is Poznań town hall. The name and number are fake.
             </p>
-
         </div>
     </footer>
 </body>
