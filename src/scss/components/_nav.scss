@@ -135,11 +135,11 @@
 
       @include respond(laptop) {
         width: 14rem;
-        transform: translateY(-0.5rem);
       }
 
       @include respond(phone) {
-        transform: translateY(0.25rem);
+        transform: translateY(0.5rem);
+        width: 13.5rem;
       }
     }
   }
