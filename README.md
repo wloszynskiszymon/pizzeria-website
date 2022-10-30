@@ -22,3 +22,17 @@ npm install
 npm start
 ```
 
+## What have I learnt in this project?
+ - How to plan a project to finish it 4-5 times faster than last one (WeatherApp)
+ - How to use more advanced css media queries
+ - How to build a themed One-Page Website
+ - How to use JS, SCSS, HTML better
+ - How to orginize the code
+ - How to insert html in js and create components like slider or collapsable navbar
+ 
+ Git:
+ - How to use GitHub and how to not delete branches on GitHub causing losing of commit history D:
+ - How to recover branches
+ - How to use Pull request and merge
+ 
+ 
