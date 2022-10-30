@@ -1,3 +1,13 @@
+:root {
+  --nav-height: 7rem;
+}
+
+@include respond(phone) {
+  :root {
+    --nav-height: 5rem;
+  }
+}
+
 $color-first: #dfb587;
 $color-second: #cd9761;
 $color-third: #f4b043;

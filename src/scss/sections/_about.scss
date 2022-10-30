@@ -1,0 +1,107 @@
+.about {
+  grid-row: info-start / info-end;
+
+  display: flex;
+  overflow: hidden;
+
+  @include respond(tablet) {
+    flex-direction: column;
+  }
+
+  &__section {
+    background: linear-gradient($color-third, $color-forth);
+
+    width: 70vw;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(laptop) {
+      width: 60vw;
+    }
+
+    @include respond(tablet) {
+      // order: 2;
+      width: 100%;
+      min-height: 40rem;
+      height: max-content;
+    }
+  }
+
+  &__container {
+    margin: 6rem 0;
+    width: 70%;
+    height: calc(100% - 6rem);
+    border-radius: 2rem;
+    box-shadow: $box-shadow-1;
+
+    background: linear-gradient($color-second, $color-fifth);
+
+    overflow: hidden;
+
+    display: flex;
+
+    @include respond(laptop) {
+      margin: 0;
+      width: 95%;
+    }
+
+    @include respond(tablet) {
+      min-height: 30rem;
+    }
+
+    // Restaurant Image
+    &__left {
+      width: 50%;
+
+      @include respond(laptop) {
+        width: 40%;
+      }
+
+      @include respond(tablet) {
+        width: 50%;
+      }
+
+      background: linear-gradient(
+          rgba($color-second, 0.2),
+          rgba($color-third, 0.2)
+        ),
+        url(../img/images/about-pizzeria.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    // About restaurant text
+    &__right {
+      width: 50%;
+
+      @include respond(laptop) {
+        width: 60%;
+      }
+
+      @include respond(tablet) {
+        width: 50%;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: white;
+    text-shadow: $text-shadow-1;
+    padding: 2rem;
+
+    @include respond(tablet) {
+      font-size: 2.1rem;
+      padding-top: 0;
+    }
+
+    @include respond(phone-small) {
+      font-size: 2.3rem;
+    }
+  }
+}

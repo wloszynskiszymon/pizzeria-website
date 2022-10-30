@@ -1,0 +1,114 @@
+.footer {
+  grid-row: footer-start / footer-end;
+  background-color: $color-sixth;
+
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+
+  @include respond(tablet) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  justify-items: center;
+  align-items: center;
+
+  font-weight: 300;
+  color: white;
+  text-shadow: $text-shadow-1;
+  padding: 2rem;
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+
+    @include respond(tablet) {
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+  }
+
+  &__left {
+    grid-column: 1 / 2;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    @include respond(tablet) {
+      grid-row: 2 / 3;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__container {
+      padding: 0.5rem;
+      margin: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 1.6rem;
+
+      @include respond(tablet) {
+        font-size: 2.3rem;
+      }
+    }
+  }
+
+  &__logo {
+    grid-column: 2 / 3;
+
+    @include respond(tablet) {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    @include respond(tablet) {
+      grid-column: 1 / 2;
+    }
+  }
+
+  &__right {
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(tablet) {
+      grid-row: 3 / 4;
+      grid-column: 1 / 2;
+    }
+
+    &__text {
+      font-size: 1.8rem;
+
+      a {
+        font-size: 2rem;
+      }
+
+      @include respond(tablet) {
+        padding: 2rem;
+        font-size: 2.2rem;
+        a {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
+  &__author {
+    color: white;
+    img {
+      width: 1.8rem;
+      height: 1.8rem;
+
+      @include respond(tablet) {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
+}

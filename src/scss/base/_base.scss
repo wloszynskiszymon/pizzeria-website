@@ -9,17 +9,25 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @include respond(phone) {
+    font-size: 50%;
+  }
+
+  @include respond(phone-small) {
+    font-size: 40%;
+  }
 }
 
 body {
   font-family: "Signika Negative", sans-serif;
-  scroll-behavior: smooth;
 }
 
 .container {
   display: grid;
   grid-template-rows:
-    [header-start] minmax(75rem, 100vh) [header-end info-start] minmax(
+    [header-start] max-content [header-end info-start] minmax(
       55rem,
       max-content
     )
@@ -28,4 +36,35 @@ body {
     [menu-end delivery-start] max-content [delivery-end gallery-start] max-content [gallery-end ratings-start] max-content [ratings-end footer-start] max-content [footer-end];
 
   grid-template-columns: 100%;
+}
+
+.background {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  background: linear-gradient(rgba($color-second, 0.4), rgba($color-third, 0.4)),
+    url(../img/images/header-background.jpg);
+  background-position-y: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $color-first;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color-second;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $color-fifth;
 }

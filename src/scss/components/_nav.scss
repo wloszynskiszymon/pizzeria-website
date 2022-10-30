@@ -1,6 +1,9 @@
 .nav {
-  height: $nav-height;
+  height: var(--nav-height);
   position: fixed;
+
+  @include respond(phone) {
+  }
 
   background: linear-gradient($color-third, $color-second);
 
@@ -11,29 +14,116 @@
 
   box-shadow: rgba(0, 0, 0, 0.4) 0 0.5rem 2rem;
 
-  &__left {
-    width: 45%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+  &__box {
+    position: fixed;
+    top: var(--nav-height);
+    right: 0;
+    width: 40vw;
+    height: 40rem;
+    background-color: red;
+    z-index: 100;
 
-  &__middle {
-    width: 10%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     &__link {
       display: block;
+      width: 100%;
+      height: 100%;
+
+      font-size: 2rem;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      text-shadow: $text-shadow-1;
+      text-transform: uppercase;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $color-third;
+      border: 0.5rem solid $color-forth;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    background: transparent;
+    border: none;
+    width: var(--nav-height);
+    height: var(--nav-height);
+
+    display: none;
+
+    z-index: 99999999999;
+
+    @include respond(tablet) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include respond(phone) {
+      right: 1rem;
+    }
+
+    &__icon {
+      width: 100%;
+      height: 100%;
+
+      transform: scale(0.8);
+
+      @include respond(phone) {
+        transform: scale(0.7);
+      }
+    }
+  }
+
+  &__left {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include respond(laptop) {
+      width: 45%;
+    }
+  }
+
+  &__middle {
+    width: 20%;
+
+    @include respond(laptop) {
+      width: 10%;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 15rem;
       height: 12rem;
+
       border-radius: 0 0 50% 50%;
       background: linear-gradient($color-third, $color-forth);
       box-shadow: rgba(0, 0, 0, 0.1) 1rem 1rem 5rem,
         rgba(0, 0, 0, 0.1) -1rem 1rem 5rem;
 
       transform: translateY(2rem);
+
+      @include respond(laptop) {
+        width: 12rem;
+        height: 10rem;
+        transform: translateY(1rem);
+      }
     }
 
     &__logo {
@@ -41,7 +131,15 @@
       width: 15rem;
       margin: 0 auto;
       padding: 3rem;
-      transform: translateY(-2rem);
+
+      @include respond(laptop) {
+        width: 14rem;
+        transform: translateY(-0.5rem);
+      }
+
+      @include respond(phone) {
+        transform: translateY(0.25rem);
+      }
     }
   }
 
@@ -50,6 +148,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    @include respond(laptop) {
+      width: 45%;
+    }
   }
 
   &__link {
@@ -61,5 +163,9 @@
     font-weight: bold;
     white-space: nowrap;
     transition: 0.5s;
+
+    @include respond(tablet) {
+      display: none;
+    }
   }
 }
