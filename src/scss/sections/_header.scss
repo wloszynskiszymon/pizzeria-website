@@ -10,18 +10,6 @@
 
   background: transparent;
 
-  @supports (background-attachment: fixed) {
-    background: linear-gradient(
-        rgba($color-second, 0.2),
-        rgba($color-third, 0.2)
-      ),
-      url(../img/images/header-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-  }
-
   overflow: hidden;
 
   &__heading-1 {
