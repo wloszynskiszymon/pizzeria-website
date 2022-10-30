@@ -29,8 +29,8 @@ export const initScroll = function () {
     const dy = e.clientY - pos.y;
 
     // Scroll the element
-    container.scrollTop = pos.top + dy;
-    container.scrollLeft = pos.left + dx;
+    container.scrollTop = pos.top + dy * 1.3;
+    container.scrollLeft = pos.left + dx * 1.3;
   };
 
   const mouseUpHandler = function (e) {

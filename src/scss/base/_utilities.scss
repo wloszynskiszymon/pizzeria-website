@@ -15,3 +15,47 @@
     display: none !important;
   } //768px
 }
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+}
+
+.icon-text {
+  &__container {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+
+    @include respond(tablet) {
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+  }
+
+  &__text {
+    font-size: 2rem;
+  }
+}
+
+.table {
+  &,
+  td,
+  td,
+  th {
+    font-size: 2rem;
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    color: white;
+    text-shadow: $text-shadow-1;
+  }
+}

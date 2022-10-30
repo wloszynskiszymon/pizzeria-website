@@ -43,35 +43,33 @@ class Card {
 
   _renderLink() {
     const markup = `
-        <a class="link-1 menu__button hidden--mobile">${
+        <a id="menu-btn" class="link-1 menu__button hidden--mobile">${
           this._loadedOnPhone ? "Rozwiń" : "Zwiń"
         } menu</a>
     `;
 
     this._menu.insertAdjacentHTML("beforeend", markup);
 
-    this._btnCollapseMenu = document.querySelector(".menu__button");
+    this._btnCollapseMenu = document.querySelector("#menu-btn");
 
-    this._btnCollapseMenu.addEventListener("click", () => {
-      const cards = document.querySelectorAll(".collapsable");
-      cards.forEach((card) => card.classList.toggle("hidden--desktop"));
+    this._btnCollapseMenu.addEventListener("click", (e) => {
+      e.preventDefault();
 
-      this._changeLinkState();
+      location.hash = "";
+
+      document
+        .querySelectorAll(".collapsable")
+        .forEach((card) => card.classList.toggle("hidden--desktop"));
+
+      location.hash = "#menu";
+
+      // Update Link textContent
+      document
+        .querySelector(".collapsable")
+        .classList.contains("hidden--desktop")
+        ? (this._btnCollapseMenu.textContent = "Rozwiń menu")
+        : (this._btnCollapseMenu.textContent = "Zwiń menu");
     });
-
-    window.addEventListener("resize", () => {
-      if (!this._btnCollapseMenu.classList.contains("hidden--mobile")) {
-        this._btnCollapseMenu.textContent = "Rozwiń menu";
-      }
-    });
-  }
-
-  _changeLinkState() {
-    this._isMenuCollapsed
-      ? (this._btnCollapseMenu.textContent = "Zwiń menu")
-      : (this._btnCollapseMenu.textContent = "Rozwiń menu");
-
-    this._isMenuCollapsed = !this._isMenuCollapsed;
   }
 }
 

@@ -54,9 +54,12 @@
 
     margin-top: 2rem;
     padding: 1rem 2rem;
-    border: 0.5rem solid $color-third;
+
+    outline: 0.5rem solid $color-third;
 
     background-color: transparent;
+
+    cursor: pointer;
 
     order: 99999;
   }

@@ -17,8 +17,8 @@ class Slider {
 
     this._btnRight.addEventListener("click", this._slideNext.bind(this));
     this._btnLeft.addEventListener("click", this._slidePrevious.bind(this));
-    document.addEventListener("keydown", (e) => this._slideWithKeyboard(e));
     this._dotsContainer.addEventListener("click", (e) => this._slideWithDot(e));
+    document.addEventListener("keydown", (e) => this._slideWithKeyboard(e));
   }
 
   _renderDots() {
