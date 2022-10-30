@@ -29,29 +29,12 @@
 
 .heading-1 {
   @extend %heading;
-
-  margin-top: calc($nav-height + 12.5rem);
-  font-size: 18rem;
-  letter-spacing: 1rem;
-
-  transform: skew(-14deg) rotate(-4deg);
-}
-
-.heading-2 {
-  @extend %heading;
-
-  font-size: 15rem;
-
-  transform: skew(-14deg) translate(15rem, -5rem) rotate(-4deg);
-}
-
-.heading-3 {
-  @extend %heading;
-
-  font-size: 6rem;
-  letter-spacing: 1.5rem;
-
-  transform: skew(-15deg) translate(8rem, -6rem) rotate(-4deg);
+  font-size: 5rem;
+  width: fit-content;
+  transform: skew(-10deg) rotate(-3deg);
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .link-1 {
