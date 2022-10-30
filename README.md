@@ -5,7 +5,7 @@ Pizzeria website created for imagined resta
 ## How to start?
 
 Visit the website:
-https://weather-app-szymon.netlify.app/
+https://pizzeria-website-szymon.netlify.app/
 
 ## OR
 
