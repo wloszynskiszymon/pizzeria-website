@@ -1,4 +1,4 @@
-class Card {
+class Menu {
   // If user refreshed / loaded page with screen smaller than 768px then the value is true
   _loadedOnPhone = window.matchMedia("(max-width: 48em)").matches;
 
@@ -73,4 +73,4 @@ class Card {
   }
 }
 
-export default new Card();
+export default new Menu();

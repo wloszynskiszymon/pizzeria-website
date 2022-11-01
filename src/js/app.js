@@ -1,9 +1,9 @@
 import "./components/nav";
 import "./components/menu";
-import * as dishes from "./dishes";
-import * as ratings from "./components/ratings";
 import "./components/slider";
-import menu from "./components/menu";
+import { getAllMenuDishes } from "./dishes";
+import { initScroll } from "./components/ratings";
+
 
 class App {
   state = {
@@ -12,15 +12,13 @@ class App {
 
   constructor() {
     // Get menu and save it
-    this.state.pizzas = dishes.getAllMenuDishes();
+    this.state.pizzas = getAllMenuDishes();
 
     // Render items in menu section
     menu.initMenu(this.state.pizzas);
 
-    // Initialize scroll
-    ratings.initScroll();
-
-    // Initialize slider
+    // Initialize scroll in ratings section
+    initScroll();
   }
 }
 
