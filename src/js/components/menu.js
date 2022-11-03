@@ -1,8 +1,8 @@
 class Menu {
   // If user refreshed / loaded page with screen smaller than 768px then the value is true
-  _loadedOnPhone = window.matchMedia("(max-width: 48em)").matches;
+  _loadedOnPhone = window.matchMedia('(max-width: 48em)').matches;
 
-  _menu = document.querySelector(".menu__container");
+  _menu = document.querySelector('.menu__container');
   _btnCollapseMenu;
   _isMenuCollapsed = this._loadedOnPhone ? true : false;
 
@@ -17,8 +17,8 @@ class Menu {
   _renderMenu(menu) {
     menu.forEach((dish) => {
       const markup = `
-        <div class="card ${dish.collapsable ? "collapsable" : ""} ${
-        this._loadedOnPhone && dish.collapsable ? "hidden--desktop" : ""
+        <div class="card ${dish.collapsable ? 'collapsable' : ''} ${
+        this._loadedOnPhone && dish.collapsable ? 'hidden--desktop' : ''
       }">
             <div class="card__top">
               <img class="card__image" src="${dish.imgPath}" alt="${
@@ -29,7 +29,7 @@ class Menu {
             </div>
             <div class="card__main">
                 <p class="card__ingredients">
-                    ${dish.ingredients.join(", ")}
+                    ${dish.ingredients.join(', ')}
                 </p>
                 <h2 class="card__price__heading card__price">${
                   dish.price
@@ -37,38 +37,38 @@ class Menu {
             </div>
         </div>
       `;
-      this._menu.insertAdjacentHTML("beforeend", markup);
+      this._menu.insertAdjacentHTML('beforeend', markup);
     });
   }
 
   _renderLink() {
     const markup = `
         <a id="menu-btn" class="link-1 menu__button hidden--mobile">${
-          this._loadedOnPhone ? "Rozwiń" : "Zwiń"
+          this._loadedOnPhone ? 'Rozwiń' : 'Zwiń'
         } menu</a>
     `;
 
-    this._menu.insertAdjacentHTML("beforeend", markup);
+    this._menu.insertAdjacentHTML('beforeend', markup);
 
-    this._btnCollapseMenu = document.querySelector("#menu-btn");
+    this._btnCollapseMenu = document.querySelector('#menu-btn');
 
-    this._btnCollapseMenu.addEventListener("click", (e) => {
+    this._btnCollapseMenu.addEventListener('click', (e) => {
       e.preventDefault();
 
-      location.hash = "";
+      location.hash = '';
 
       document
-        .querySelectorAll(".collapsable")
-        .forEach((card) => card.classList.toggle("hidden--desktop"));
+        .querySelectorAll('.collapsable')
+        .forEach((card) => card.classList.toggle('hidden--desktop'));
 
-      location.hash = "#menu";
+      location.hash = '#menu';
 
       // Update Link textContent
       document
-        .querySelector(".collapsable")
-        .classList.contains("hidden--desktop")
-        ? (this._btnCollapseMenu.textContent = "Rozwiń menu")
-        : (this._btnCollapseMenu.textContent = "Zwiń menu");
+        .querySelector('.collapsable')
+        .classList.contains('hidden--desktop')
+        ? (this._btnCollapseMenu.textContent = 'Rozwiń menu')
+        : (this._btnCollapseMenu.textContent = 'Zwiń menu');
     });
   }
 }

@@ -1,9 +1,8 @@
-import "./components/nav";
-import "./components/menu";
-import "./components/slider";
-import { getAllMenuDishes } from "./dishes";
-import { initScroll } from "./components/ratings";
-
+import './components/nav';
+import './components/slider';
+import menu from './components/menu';
+import getAllMenuDishes from './dishes';
+import initScroll from './components/ratings';
 
 class App {
   state = {

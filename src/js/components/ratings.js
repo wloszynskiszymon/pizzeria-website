@@ -1,5 +1,5 @@
 // Comments could be inplemented in the same way as menu, but I hardcoded 3 imaginary comments
-export const initScroll = function () {
+const initScroll = function () {
   const container = document.querySelector(".ratings__main");
 
   let pos = { top: 0, left: 0, x: 0, y: 0 };
@@ -44,3 +44,5 @@ export const initScroll = function () {
 
   container.addEventListener("mousedown", mouseDownHandler);
 };
+
+export default initScroll;
